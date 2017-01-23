@@ -137,22 +137,14 @@ NSMutableDictionary *hostDict;
 
 - (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response
 {
-//    request = [[self class] wrappedURLRequest:request];
-    [self.client URLProtocol:self wasRedirectedToRequest:request redirectResponse:response];
+    request = [[self class] wrappedURLRequest:request];
+    if (response) {
+        [self.client URLProtocol:self wasRedirectedToRequest:request redirectResponse:response];
+    }
     return request;
 }
 
 /** HTTPS */
-
-- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace
-{
-    return [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust];
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
-{
-    [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
-}
 
 - (BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection {
     return YES;

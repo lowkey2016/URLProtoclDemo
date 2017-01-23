@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _tf.text = @"https://aso2.umlife.com";
-//    _tf.text = @"https://portal.y.cn";
+//    _tf.text = @"https://aso2.umlife.com";
+    _tf.text = @"https://portal.y.cn";
     _web.delegate = self;
 }
 
