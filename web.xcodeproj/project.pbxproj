@@ -13,6 +13,7 @@
 		1860D2A61E34993A003859C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1860D2A41E34993A003859C6 /* Main.storyboard */; };
 		1860D2A81E34993A003859C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1860D2A71E34993A003859C6 /* Assets.xcassets */; };
 		1860D2AB1E34993A003859C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1860D2A91E34993A003859C6 /* LaunchScreen.storyboard */; };
+		1860D2B51E35A569003859C6 /* CustomURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860D2B41E35A569003859C6 /* CustomURLProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1860D2A71E34993A003859C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1860D2AA1E34993A003859C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1860D2AC1E34993A003859C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1860D2B31E35A569003859C6 /* CustomURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomURLProtocol.h; sourceTree = "<group>"; };
+		1860D2B41E35A569003859C6 /* CustomURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomURLProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				1860D29F1E34993A003859C6 /* AppDelegate.m */,
 				1860D2A11E34993A003859C6 /* ViewController.h */,
 				1860D2A21E34993A003859C6 /* ViewController.m */,
+				1860D2B31E35A569003859C6 /* CustomURLProtocol.h */,
+				1860D2B41E35A569003859C6 /* CustomURLProtocol.m */,
 				1860D2A41E34993A003859C6 /* Main.storyboard */,
 				1860D2A71E34993A003859C6 /* Assets.xcassets */,
 				1860D2A91E34993A003859C6 /* LaunchScreen.storyboard */,
@@ -110,7 +115,7 @@
 				TargetAttributes = {
 					1860D2971E34993A003859C6 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = JQ7R6TK72B;
+						DevelopmentTeam = 349485F24W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +158,7 @@
 			files = (
 				1860D2A31E34993A003859C6 /* ViewController.m in Sources */,
 				1860D2A01E34993A003859C6 /* AppDelegate.m in Sources */,
+				1860D2B51E35A569003859C6 /* CustomURLProtocol.m in Sources */,
 				1860D29D1E34993A003859C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,8 +277,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JQ7R6TK72B;
+				DEVELOPMENT_TEAM = 349485F24W;
 				INFOPLIST_FILE = web/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jymnchen.web;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,8 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JQ7R6TK72B;
+				DEVELOPMENT_TEAM = 349485F24W;
 				INFOPLIST_FILE = web/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jymnchen.web;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +318,7 @@
 				1860D2B11E34993A003859C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
